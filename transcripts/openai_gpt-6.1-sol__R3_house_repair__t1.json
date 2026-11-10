@@ -1,0 +1,87 @@
+{
+  "run_id": "openai_gpt-6.1-sol__R3_house_repair__t1",
+  "model": "openai/gpt-6.1-sol",
+  "task": "R3_house_repair",
+  "trial": 1,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "বাসায় মেরামতের কাজ করি। মিস্ত্রী বলল আরো ৮০০০ টাকা লাগবে রং কিনতে। দেখোতো রং কেনার টাকা আছে কীনা ক্যাশে",
+  "response": "ENTRIES:\n- শিরোনাম: বাসা মেরামত।\n- শুরুর ক্যাশ: ৬০,৫০০ টাকা।\n- পরে দেওয়া: ৫,০০০ টাকা।\n- উপশিরোনাম: খরচ।\n১. ইট: ১০,০০০ টাকা।\n২. বালু: ৩,০০০ টাকা।\n৩. সিমেন্ট: ১৬,৭০০ টাকা।\n৪. পরিবহন: ১,৭০০ টাকা।\n৫. রড: ৮,০০০ টাকা। পাশে সংযোজন: “পরে আরো ২২০০ টাকা”।\n৬. কাঠ: ২,৩৭০ টাকা।\n৭. বাঁশ পরিবহন: ৫০০ টাকা।\n৮. বাঁশ: ২০০ টাকা।\n৯. মিস্ত্রি খরচ: ৭,০০০ টাকা।\n১০. মিস্ত্রির দুপুরের খাবার: ২,২০০ টাকা।\n- কোনো কাটাকাটি বা তীরচিহ্ন নেই।\n\nRULES:\n- শুরুর ক্যাশের সঙ্গে পরে দেওয়া ৫,০০০ টাকা যোগ হবে।\n- রডের অতিরিক্ত ২,২০০ টাকাও খরচে ধরতে হবে।\n- তালিকার সব খরচ বাদ দিয়ে অবশিষ্ট ক্যাশ বের করতে হবে।\n- রং কিনতে আরও ৮,০০০ টাকা প্রয়োজন; অবশিষ্ট ক্যাশ অন্তত এত হলে টাকা আছে।\n\nREASONING:\n- মোট জমা = ৬০,৫০০ + ৫,০০০ = ৬৫,৫০০ টাকা।\n- মোট খরচ = ১০,০০০ + ৩,০০০ + ১৬,৭০০ + ১,৭০০ + ৮,০০০ + ২,২০০ + ২,৩৭০ + ৫০০ + ২০০ + ৭,০০০ + ২,২০০ = ৫৩,৮৭০ টাকা।\n- অবশিষ্ট ক্যাশ = ৬৫,৫০০ − ৫৩,৮৭০ = ১১,৬৩০ টাকা।\n- রঙের ৮,০০০ টাকা দেওয়ার পরও থাকবে ৩,৬৩০ টাকা।\n\nFINAL: হ্যাঁ",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "হ্যাঁ",
+    "value": "yes"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "পরে দেওয়া: ৫,০০০ টাকা।"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "ইট: ১০,০০০ টাকা।"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "বালু: ৩,০০০ টাকা।"
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "পরিবহন: ১,৭০০ টাকা।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "রড: ৮,০০০ টাকা। পাশে সংযোজন: “পরে আরো ২২০০ টাকা”।"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "কাঠ: ২,৩৭০ টাকা।"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "বাঁশ পরিবহন: ৫০০ টাকা।"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "মিস্ত্রি খরচ: ৭,০০০ টাকা।"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "মিস্ত্রির দুপুরের খাবার: ২,২০০ টাকা।"
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "রডের অতিরিক্ত ২,২০০ টাকাও খরচে ধরতে হবে।"
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

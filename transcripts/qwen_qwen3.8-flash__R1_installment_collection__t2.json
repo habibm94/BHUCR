@@ -1,0 +1,18 @@
+{
+  "run_id": "qwen_qwen3.8-flash__R1_installment_collection__t2",
+  "model": "qwen/qwen3.8-flash",
+  "task": "R1_installment_collection",
+  "trial": 2,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "কিস্তির টাকা তুললাম সারাদিন। দেখোতো রাতে অফিসে কত টাকা জমা দিতে হবে?",
+  "response": "ENTRIES:\n- শিরোনাম (নিচে রেখা): নিকসিত\n- ১/ জামিনা — ১৫০০ (নগদ)। আগের ৫০০ পাবো। বিদেশে দূরে।\n- ২/ হোসনেআরা ভাই — ২৫০০ টাকা (নগদ)\n- ৩/ সুনাম — ২০০০ টাকা (নগদ) —> (তীর চিহ্ন) ১৮০০ টাকা কিস্তি। ২০০ টাকা পাবে। খরচা ছিলো না। আগামী পরশু হবে।\n- ৪/ নাদির — ৩০০০ টাকা নগদ।\n- (আড়াআড়ি রেখা)\n- * অফিস থেকে পাওয়া হাতখরচ — ৩০০ টাকা।\n- ব্যয় হয়েছে — ১৮০ \"\n- হাতে আছে — ১২০ \"\n- (উল্লম্ব রেখার পাশের নোট) ফেরত দেয়া লাগবে না।\n\nRULES:\n- জামিনা: এখন নগদ ১৫০০ তুলেছি; \"আগের ৫০০ পাবো\" = ওটা এখনো হাতে আসেনি (বিদেশে দূরে), তাই জমায় যোগ হবে না।\n- হোসনেআরা ভাই: ২৫০০ নগদ = পুরোটাই কিস্তি, জমা হবে।\n- সুনাম: নগদ ২০০০ হাতে এসেছে, কিন্তু তার মধ্যে মাত্র ১৮০০ কিস্তি; বাকি ২০০ \"পাবে\" (সুনামকে ফেরত দিতে হবে/আগামী পরশু হবে) — তাই ২০০ অফিসে জমা নয়।\n- নাদির: ৩০০০ নগদ = কিস্তি, জমা হবে।\n- অফিসের হাতখরচ ৩০০, ব্যয় ১৮০, হাতে ",
+  "format": {
+    "ok": false,
+    "reason": "missing or out-of-order heading",
+    "final_raw": null,
+    "value": null
+  },
+  "verdicts": {},
+  "label": "Fail: Instruction following",
+  "score": 0
+}

@@ -1,0 +1,111 @@
+{
+  "run_id": "google_gemini-4-argon__R2_monthly_budget__t3",
+  "model": "google/gemini-4-argon",
+  "task": "R2_monthly_budget",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "মাসের প্রায় শেষদিক। একটা ২২০০০ টাকা দামের ইয়ারবাড পছন্দ হয়েছে। দেখোতো কেনার মত টাকা আছে কীনা।",
+  "response": "ENTRIES:\nশিরোনাম: মাসিক খরচ\n\nখরচ:\n১. গ্রোসারী — ৫০০০/-\n২. বিদ্যুৎ — ১৫০০/-\n৩. গ্যাস — ১২০০/-\n৪. কাজের লোক — ৩০০০/-\n৫. ইন্টারনেট — ১০০০/-\n৬. বাড়িতে দিয়েছি — ১০০০০/- ---> আরো ৫০০০/- পাঠাতে হবে এমাসে।\n৭. জীবন বীমা — ৩০০০/-\n৮. মেডিক্যাল ইন্স্যুরেন্স — ২০০০/-\n৯. বাইক তেল — ১৭৫০/-\n১০. বাইক মেরামত — ২৩০০/- ---> আরো ২০০০ যাবে হেডলাইট বদলাতে।\n১১. মোবাইল রিচার্জ — ৭০০/-\n১২. বাড়ি ভাড়া — ১৫০০০/-\n১৩. বাড়ি সার্ভিস চার্জ — ৩০০০/-\n\nআয়:\nবেতন — ৫০০০০/- টাকা\nদোকান ভাড়া — ৭০০০/- টাকা\nপাওনা পেয়েছি — ১২০০০/- টাকা\n\nRULES:\n১. ৬ নম্বর খরচের পাশে নোট আছে: বাড়িতে এই মাসে আরও ৫০০০ টাকা পাঠাতে হবে।\n২. ১০ নম্বর খরচের পাশে নোট আছে: বাইকের হেডলাইট বদলাতে আরও ২০০০ টাকা খরচ হবে।\n৩. পছন্দের ইয়ারবাডটির দাম ২২০০০ টাকা। মোট আয় থেকে সব খরচ (অতিরিক্ত খরচসহ) বাদ দেওয়ার পর যদি ২২০০০ টাকা বা তার বেশি অবশিষ্ট থাকে, তবেই তা কেনা যাবে।\n\nREASONING:\nমোট আয়:\nবেতন (৫০০০০) + দোকান ভাড়া (৭০০০) + পাওনা পেয়েছি (১২০০০) = ৬৯০০০ টাকা।\n\nপ্রাথমিক খরচসমূহ:\n৫০০০ + ১৫০০ + ১২০০ + ৩০০০ + ১০০০ + ১০০০০ + ৩০০০ + ২০০০ + ১৭৫০ + ২৩০০ + ৭০০ + ১৫০০০ + ৩০০০ = ৪৯৪৫০ টাকা।\n\nঅতিরিক্ত প্রয়োজনীয় খরচসমূহ:\nবাড়িতে আরও পাঠাতে হবে (৫০০০) + হেডলাইট বদলাতে লাগবে (২০০০) = ৭০০০ টাকা।\n\nমোট খরচ:\n৪৯৪৫০ + ৭০০০ = ৫৬৪৫০ টাকা।\n\nঅবশিষ্ট টাকা:\n৬৯০০০ - ৫৬৪৫০ = ১২৫৫০ টাকা।\n\nযেহেতু অবশিষ্ট টাকা (১২৫৫০ টাকা) ইয়ারবাডের দামের (২২০০০ টাকা) চেয়ে কম, তাই এটি কেনার মতো পর্যাপ্ত টাকা নেই।\n\nFINAL: না",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "না",
+    "value": "no"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "বেতন — ৫০০০০/- টাকা"
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "দোকান ভাড়া — ৭০০০/- টাকা"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "পাওনা পেয়েছি — ১২০০০/- টাকা"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "১. গ্রোসারী — ৫০০০/-"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "২. বিদ্যুৎ — ১৫০০/-"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "৩. গ্যাস — ১২০০/-"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "৪. কাজের লোক — ৩০০০/-"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "৫. ইন্টারনেট — ১০০০/-"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "৬. বাড়িতে দিয়েছি — ১০০০০/-"
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "আরো ৫০০০/- পাঠাতে হবে এমাসে।"
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "৭. জীবন বীমা — ৩০০০/-"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "৮. মেডিক্যাল ইন্স্যুরেন্স — ২০০০/-"
+    },
+    "R13": {
+      "verdict": "YES",
+      "evidence": "৯. বাইক তেল — ১৭৫০/-"
+    },
+    "R14": {
+      "verdict": "YES",
+      "evidence": "১০. বাইক মেরামত — ২৩০০/-"
+    },
+    "R15": {
+      "verdict": "YES",
+      "evidence": "আরো ২০০০ যাবে হেডলাইট বদলাতে।"
+    },
+    "R16": {
+      "verdict": "YES",
+      "evidence": "১১. মোবাইল রিচার্জ — ৭০০/-"
+    },
+    "R17": {
+      "verdict": "YES",
+      "evidence": "১২. বাড়ি ভাড়া — ১৫০০০/-"
+    },
+    "R18": {
+      "verdict": "YES",
+      "evidence": "১৩. বাড়ি সার্ভিস চার্জ — ৩০০০/-"
+    },
+    "L01": {
+      "verdict": "YES",
+      "evidence": "বেতন (৫০০০০) + দোকান ভাড়া (৭০০০) + পাওনা পেয়েছি (১২০০০) = ৬৯০০০ টাকা।"
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "YES",
+      "evidence": "বাড়িতে আরও পাঠাতে হবে (৫০০০) + হেডলাইট বদলাতে লাগবে (২০০০) = ৭০০০ টাকা।"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "বাড়িতে আরও পাঠাতে হবে (৫০০০) + হেডলাইট বদলাতে লাগবে (২০০০) = ৭০০০ টাকা।"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Lucky pass",
+  "score": 85
+}

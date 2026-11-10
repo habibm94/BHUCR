@@ -1,0 +1,127 @@
+{
+  "run_id": "google_gemma-4-31b-it__C3_wedding_accounts__t4",
+  "model": "google/gemma-4-31b-it",
+  "task": "C3_wedding_accounts",
+  "trial": 4,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "ছেলের বিয়ের অনুষ্ঠান করলাম। দেখোতো কত টাকা বাচল?",
+  "response": "ENTRIES:\n- রুমনের বিয়ে\n- হাতে ছিল — ২০০০০০/- টাকা\n- ব্যয়:\n- ১. ডেকোরেশন — ৫০০০/- টাকা\n- ২. অতিথি ভোজন — ২০০০০/- টাকা\n- ৩. ব্যান্ড ভাড়া — ২০০০০/- টাকা $\\rightarrow$ ভানততানা ২০০০টাকা পারে।\n- ৪. সাউন্ড — ৫০০০/- টাকা\n- ৫. পান-সুপারি — ২০০০/- টাকা\n- ৬. শেরওয়ানি — ৫০০০/- টাকা\n- ৭. গেট বানানো — ৩০০০/- টাকা\n- ৮. চা মিষ্টি — ২৫০০/- টাকা\n- ৯. গয়না — ৩০০০০/- টাকা\n- ১০. গাড়ি ভাড়া — ২৫০০০/- টাকা\n- ১১. ক্যাটারিং সার্ভিস চার্জ — ২২৬০০ টাকা $\\rightarrow$ আরো ২০০০টাকা পারে।\n- আত্মীয়দের কাছে যে খরচ:\n- ১. রুবিনা — ৫০০০ টাকা\n- ২. বকুলাম — ২০,০০০ টাকা $\\rightarrow$ ৭০০০ টাকা ফেরত দেওয়া লাগবে।\n- ৩. আনাম — ২০০০০ টাকা $\\rightarrow$ আরো ২০০০/- টাকা দেবে আগামীকাল।\n- ৪. কুনালয়েদ — ২০০০০ টাকা\n\nRULES:\n- হাতে ছিল (Initial amount): ২০০০০০ টাকা।\n- ব্যয় (Expenses): All listed items under \"ব্যয়\" and \"আত্মীয়দের কাছে যে খরচ\" are subtractions.\n- ব্যান্ড ভাড়া note: \"ভানততানা ২০০০টাকা পারে\" (Ambiguous, likely a side note not affecting the primary cost listed).\n- ক্যাটারিং সার্ভিস চার্জ note: \"আরো ২০০০টাকা পারে\" (Indicates an additional potential cost of ২০০০ টাকা).\n- বকুলাম note: \"৭০০০ টাকা ফেরত দেওয়া লাগবে\" (This is a liability/future payment, not a current saving or expense already spent).\n- আনাম note: \"আরো ২০০০/- টাকা দেবে আগামীকাল\" (This is a future receivable, not current cash).\n\nREASONING:\n1. Total Initial Amount = ২০০০০০ টাকা।\n2. Sum of Expenses (ব্যয়):\n   - ডেকোরেশন: ৫০০০\n   - অতিথি ভোজন: ২০০০০\n   - ব্যান্ড ভাড়া: ২০০০০\n   - সাউন্ড: ৫০০০\n   - পান-সুপারি: ২০০০\n   - শেরওয়ানি: ৫০০০\n   - গেট বানানো: ৩০০০\n   - চা মিষ্টি: ২৫০০\n   - গয়না: ৩০০০০\n   - গাড়ি ভাড়া: ২৫০০০\n   - ক্যাটারিং সার্ভিস চার্জ: ২২৬০০ + ২০০০ (as it says \"more 2000 can be\") = ২৪৬০০\n   - Subtotal Expenses = ৫০০০ + ২০০০০ + ২০০০০ + ৫০০০ + ২০০০ + ৫০০০ + ৩০০০ + ২৫০০ + ৩০০০০ + ২৫০০০ + ২৪৬০০ = ১,১৭,১০০ টাকা।\n3. Sum of Relative Expenses (আত্মীয়দের কাছে খরচ):\n   - রুবিনা: ৫০০০\n   - বকুলাম: ২০০০০\n   - আনাম: ২০০০০\n   - কুনালয়েদ: ২০০০০\n   - Subtotal Relative = ৫০০০ + ২০০০০ + ২০০০০ + ২০০০০ = ৬৫,০০০ টাকা।\n4. Total Expenditure = ১,১৭,১০০ + ৬৫,০০০ = ১,৮২,১০০ টাকা।\n5. Savings (বাচল) = ২০০০০০ - ১,৮২,১০০ = ১৭,৯০০ টাকা।\n\nFINAL:\n১৭৯০০",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "১৭৯০০",
+    "value": 17900
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "২. অতিথি ভোজন — ২০০০০/- টাকা"
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "৪. সাউন্ড — ৫০০০/- টাকা"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "৫. পান-সুপারি — ২০০০/- টাকা"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "৬. শেরওয়ানি — ৫০০০/- টাকা"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "৭. গেট বানানো — ৩০০০/- টাকা"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "৯. গয়না — ৩০০০০/- টাকা"
+    },
+    "R12": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R13": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R14": {
+      "verdict": "YES",
+      "evidence": "ক্যাটারিং সার্ভিস চার্জ — ২২৬০০ টাকা $\\rightarrow$ আরো ২০০০টাকা পারে।"
+    },
+    "R15": {
+      "verdict": "YES",
+      "evidence": "১. রুবিনা — ৫০০০ টাকা"
+    },
+    "R16": {
+      "verdict": "YES",
+      "evidence": "২. বকুলাম — ২০,০০০ টাকা"
+    },
+    "R17": {
+      "verdict": "YES",
+      "evidence": "৭০০০ টাকা ফেরত দেওয়া লাগবে"
+    },
+    "R18": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R19": {
+      "verdict": "YES",
+      "evidence": "আরো ২০০০/- টাকা দেবে আগামীকাল"
+    },
+    "R20": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "ক্যাটারিং সার্ভিস চার্জ: ২২৬০০ + ২০০০ (as it says \"more 2000 can be\") = ২৪৬০০"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L06": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L07": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

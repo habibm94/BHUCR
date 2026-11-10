@@ -1,0 +1,18 @@
+{
+  "run_id": "google_gemma-4-31b-it__C2_tour_accounts__t3",
+  "model": "google/gemma-4-31b-it",
+  "task": "C2_tour_accounts",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "ট্যুর থেকে ফিরলাম। আমি ছিলাম হিসাবের দায়িত্বে। দেখোতো হিসাব থেকে কোন টাকা বেচেছে কীনা?",
+  "response": "ENTRIES:\n- ট্যুর হিসাব\n- মোট টাকা\n- আম্বিস — ২৬০০/-\n- জাহেদ — ৩৬০০/- (প্রথমম খামে ২০০০/- পরে চেকে ২০০০/-)\n- রিয়া — [No value listed]\n- আমি — ২০০০/-\n- রুবেল — ৪০০/- (ট্যুরের দিন সকালে দিয়েছে)\n- খরচ\n- বাস ভাড়া — ৩৪০০/-\n- হোটেল — ৩০০/-\n- হোটেল ভাড়া — ৫০০/-\n- ইন্সুরেন্স — ৫%). (৫০% ফেরত পাবো)\n- লোকাল বাইক — ৩০০/- (আরো ২০০ টাকা পাবো)\n- খাবার — ৩০০/-\n- রুবেল আরো ৫০০/- দেবে বলেছিলো, দেয়নি।\n- টাকা বালে সবাই যে যততুকু দিয়েছে সেই অনুপাতে টাকা ফেরত পাবে।\n\nRULES:\n- জাহেদ: ২০০০ + ২০০০ = ৪০০০ টাকা (The text says 3600 but the breakdown in brackets says 2000 + 2000). I will use the breakdown total of 4000.\n- ইন্সুরেন্স: ৫০% ফেরত পাবো (50% of 50 = 25 refund).\n- লোকাল বাইক: আরো ২০০ টাকা পাবো (200 refund).\n- রুবেল: ৫০০ টাকা দেবে বলেছিলো কিন্তু দেয়নি (Not added to total).\n\nREASONING:\n1. Total Collections:\n   - Ambis: 2600\n   - Zahed: 4000 (2000 + 2000)\n   - Me: 2000\n   - Rubel: 400\n   - Total = 2600 + 4000 + 2000 + 400 = 9000\n\n2. Total Expenses:\n   - Bus: 3400\n   - Hotel (1): 300\n   - Hotel Rent: 500\n   - Insurance: 50\n   - Local Bike: 300\n   - Food: 300\n   - Total = 3400 + 300 + 500 + 50 + 300 + 300 = 4850\n\n3. Expected Refunds:\n   - Insurance: 50 * 50% = 25\n   - Local Bike: 200\n   - Total Refund = 225\n\n4. Final Balance:\n   - (Total Collections - Total Expenses) + Refunds\n   - (9000 - 4850) + 225\n   - 4150 + 225 = 4375\n\nFINAL: 4375",
+  "format": {
+    "ok": false,
+    "reason": "FINAL is not a clean yesno",
+    "final_raw": "4375",
+    "value": null
+  },
+  "verdicts": {},
+  "label": "Fail: Instruction following",
+  "score": 0
+}

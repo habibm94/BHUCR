@@ -1,0 +1,9 @@
+{
+  "id": "C3_wedding_accounts",
+  "type": "complex",
+  "answer_type": "number",
+  "answer": 5700,
+  "complexity": {
+    "rules": 4
+  }
+}

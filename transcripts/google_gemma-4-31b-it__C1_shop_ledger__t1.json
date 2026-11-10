@@ -1,0 +1,99 @@
+{
+  "run_id": "google_gemma-4-31b-it__C1_shop_ledger__t1",
+  "model": "google/gemma-4-31b-it",
+  "task": "C1_shop_ledger",
+  "trial": 1,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "দেখোতো আজ রাতে দোকান বন্ধ করার সময় ক্যাশে কত টাকা থাকবে?",
+  "response": "ENTRIES:\n- দোকানের হিসাব\n- ক্যাশে ছিল $\\rightarrow$ ২২০০/-\n- চা আইসিম $\\rightarrow$ ২৬০/-\n- বিক্রি:\n- জসিম $\\rightarrow$ ৫০০/- (নগদ)\n- আকুলাহ $\\rightarrow$ ৫০০/- (নগদ), তবে বাকির ২০০ দিয়ে গেছে বিলানো।\n- কবির $\\rightarrow$ ৬০০/- (নগদ) $\\rightarrow$ ৩০০ টাকার মণি পণ্য পাইছে। রাতে টাকা ফেরত দেয়া লাগবে।\n- জিলন $\\rightarrow$ ১০০০/- (নগদ) $\\rightarrow$ আরো ৮০০/- মান করবে বল।\n- রুবায়েত $\\rightarrow$ ২৭০০/- নগদ, ৫৫০ বাকি (আগামী মাসে দেবে)।\n- বকর $\\rightarrow$ ৩০০/- (নগদ)\n- ওসমান $\\rightarrow$ ২৬০০/- নগদ + ২০০ টাকা বাকি (আশরাফন বন্ধু দেবে)।\n- জামিল $\\rightarrow$ ২৪০০/- (নগদ) $\\rightarrow$ ২০০ টাকা ধার। আমি আরো আগের ২৫০/- টাকা। বাকি ২০০/- টাকা রাতে দিয়ে যাবে।\n- পাওনা:\n- তনুর $\\rightarrow$ ৭০০ টাকা (রাতে দেবে)\n- রহাইযুম $\\rightarrow$ ৩০০ টাকা (দেরি আছিদিতে)\n- androidx $\\rightarrow$ ২৫০০ টাকা (কাল দেবে)\n- ছোট রাতে ৩০০০/- দিতে আসবে।\n- মুন্না ২৫০০- দিয়ে আগামীকাল।\n- দেওয়া:\n- তনয় $\\rightarrow$ ৮০০/- (রাতে আসবে নিতে)\n- শ্যামা $\\rightarrow$ ২১০০/- (আগামী সোমবার আসবে নিতে)\n\nRULES:\n- Starting cash: ২২০০/-\n- Tea expense (চা আইসিম): -২৬০/-\n- Cash sales (নগদ বিক্রি): জসিম (৫০০), আকুলাহ (৫০০), কবির (৬০০), জিলন (১০০০), রুবায়েত (২৭০০), বকর (৩০০), ওসমান (২৬০০), জামিল (২৪০০)।\n- Deductions/Returns: কবিরকে ৩০০ টাকা ফেরত দিতে হবে।\n- Future payments (not yet in cash): তনুর ৭০০, ছোটর ৩০০০, মুন্নার ২৫০০, জামিলের ২০০।\n- Future payouts (not yet gone): তনয় ৮০০, শ্যামা ২১০০।\n\nREASONING:\n1. Initial Cash: 2200\n2. Minus Tea: 2200 - 260 = 1940\n3. Add Cash Sales:\n   - জসিম: 1940 + 500 = 2440\n   - আকুলাহ: 2440 + 500 = 2940\n   - কবির: 2940 + 600 = 3540\n   - জিলন: 3540 + 1000 = 4540\n   - রুবায়েত: 4540 + 2700 = 7240\n   - বকর: 7240 + 300 = 7540\n   - ওসমান: 7540 + 2600 = 10140\n   - জামিল: 10140 + 2400 = 12540\n4. Minus Return to Kabir: 12540 - 300 = 12240\n5. Other entries (বাকি, পাওনা, দেওয়া) are for future dates or not yet processed, so they don't affect tonight's closing cash.\n\nFINAL: 12240",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "12240",
+    "value": 12240
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "জসিম $\\rightarrow$ ৫০০/- (নগদ)"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "আকুলাহ $\\rightarrow$ ৫০০/- (নগদ), তবে বাকির ২০০ দিয়ে গেছে বিলানো।"
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "Deductions/Returns: কবিরকে ৩০০ টাকা ফেরত দিতে হবে।"
+    },
+    "R08": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "রুবায়েত $\\rightarrow$ ২৭০০/- নগদ"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R12": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R13": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R14": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R15": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

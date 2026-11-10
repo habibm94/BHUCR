@@ -1,0 +1,17 @@
+{
+  "id": "C1_shop_ledger",
+  "type": "complex",
+  "answer_type": "number",
+  "answer": 22890,
+  "complexity": {
+    "rules": 12
+  },
+  "buckets": {
+    "opening": 2320,
+    "cash_sales": 24600,
+    "received_today": 300,
+    "expense": 230,
+    "paid_tonight": 4100,
+    "later_excluded": 9800
+  }
+}

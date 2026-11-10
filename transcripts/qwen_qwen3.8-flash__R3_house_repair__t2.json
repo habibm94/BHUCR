@@ -1,0 +1,18 @@
+{
+  "run_id": "qwen_qwen3.8-flash__R3_house_repair__t2",
+  "model": "qwen/qwen3.8-flash",
+  "task": "R3_house_repair",
+  "trial": 2,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "বাসায় মেরামতের কাজ করি। মিস্ত্রী বলল আরো ৮০০০ টাকা লাগবে রং কিনতে। দেখোতো রং কেনার টাকা আছে কীনা ক্যাশে",
+  "response": "",
+  "format": {
+    "ok": false,
+    "reason": "missing or out-of-order heading",
+    "final_raw": null,
+    "value": null
+  },
+  "verdicts": {},
+  "label": "Fail: Instruction following",
+  "score": 0
+}

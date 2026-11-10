@@ -1,0 +1,111 @@
+{
+  "run_id": "openai_gpt-6.1-sol__R2_monthly_budget__t3",
+  "model": "openai/gpt-6.1-sol",
+  "task": "R2_monthly_budget",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "মাসের প্রায় শেষদিক। একটা ২২০০০ টাকা দামের ইয়ারবাড পছন্দ হয়েছে। দেখোতো কেনার মত টাকা আছে কীনা।",
+  "response": "ENTRIES:\nপাতার শিরোনাম: “মাসিক খরচ”। দুটি বিভাগ: “খরচ” ও “আয়”।\n\n**আয়**\n- বেতন — ৫০,০০০ টাকা।\n- দোকান ভাড়া — ৭,০০০ টাকা।\n- পাওনা পেয়েছি — ১২,০০০ টাকা।\n\n**খরচ**\n১. গ্রোসারী — ৫,০০০ টাকা।\n২. বিদ্যুৎ — ১,৫০০ টাকা।\n৩. গ্যাস — ১,২০০ টাকা।\n৪. কাজের লোক — ৬,০০০ টাকা।\n৫. ইন্টারনেট — ১,০০০ টাকা।\n৬. বাড়িতে দিয়েছি — ১০,০০০ টাকা।\n   → পাশে লেখা: “আরো ৫০০০/- পাঠাতে হবে এমাসে।”\n৭. জীবন বীমা — ৩,০০০ টাকা।\n৮. মেডিক্যাল ইন্স্যুরেন্স — ২,০০০ টাকা।\n৯. বাইক তেল — ১,৭৫০ টাকা।\n১০. বাইক মেরামত — ২,৫০০ টাকা।\n   → পাশে লেখা: “আরো ২০০০ যাবে হেলমেট বদলাতে।”\n১১. মোবাইল রিচার্জ — ৭০০ টাকা।\n১২. বাড়ি ভাড়া — ১৫,০০০ টাকা।\n১৩. বাড়ি সার্ভিস চার্জ — ৩,০০০ টাকা।\n\nকোনো কাটাকাটি দেখা যাচ্ছে না।\n\nRULES:\n- মাসের শেষদিকে কেনার সামর্থ্য যাচাই করতে তালিকার সব মাসিক খরচ ধরতে হবে।\n- বাড়িতে দেওয়া ১০,০০০ টাকার অতিরিক্ত আরও ৫,০০০ টাকা এই মাসেই পাঠাতে হবে।\n- বাইক মেরামতের খরচের অতিরিক্ত হেলমেট বদলাতে আরও ২,০০০ টাকা লাগবে।\n- ইয়ারবাডের দাম ২২,০০০ টাকা; সব খরচ রাখার পরে অন্তত এই পরিমাণ টাকা অবশিষ্ট থাকতে হবে।\n\nREASONING:\n১. মোট আয়:\n৫০,০০০ + ৭,০০০ + ১২,০০০ = **৬৯,০০০ টাকা**।\n\n২. তালিকাভুক্ত মোট খরচ:\n৫,০০০ + ১,৫০০ + ১,২০০ + ৬,০০০ + ১,০০০ + ১০,০০০ + ৩,০০০ + ২,০০০ + ১,৭৫০ + ২,৫০০ + ৭০০ + ১৫,০০০ + ৩,০০০ = **৫২,৬৫০ টাকা**।\n\n৩. পাশের নোটের অতিরিক্ত খরচ:\n৫,০০০ + ২,০০০ = **৭,০০০ টাকা**।\n\n৪. সব খরচ রেখে অবশিষ্ট:\n৬৯,০০০ − ৫২,৬৫০ − ৭,০০০ = **৯,৩৫০ টাকা**।\n\n৫. ইয়ারবাড কিনতে ঘাটতি:\n২২,০০০ − ৯,৩৫০ = **১২,৬৫০ টাকা**। তাই এই হিসাব অনুযায়ী কেনার মতো টাকা নেই।\n\nFINAL: না",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "না",
+    "value": "no"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "বেতন — ৫০,০০০ টাকা।"
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "দোকান ভাড়া — ৭,০০০ টাকা।"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "পাওনা পেয়েছি — ১২,০০০ টাকা।"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "গ্রোসারী — ৫,০০০ টাকা।"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "বিদ্যুৎ — ১,৫০০ টাকা।"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "গ্যাস — ১,২০০ টাকা।"
+    },
+    "R07": {
+      "verdict": "NO",
+      "evidence": "কাজের লোক — ৬,০০০ টাকা।"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "ইন্টারনেট — ১,০০০ টাকা।"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "বাড়িতে দিয়েছি — ১০,০০০ টাকা।"
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "→ পাশে লেখা: “আরো ৫০০০/- পাঠাতে হবে এমাসে।”"
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "জীবন বীমা — ৩,০০০ টাকা।"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "মেডিক্যাল ইন্স্যুরেন্স — ২,০০০ টাকা।"
+    },
+    "R13": {
+      "verdict": "YES",
+      "evidence": "বাইক তেল — ১,৭৫০ টাকা।"
+    },
+    "R14": {
+      "verdict": "NO",
+      "evidence": "বাইক মেরামত — ২,৫০০ টাকা।"
+    },
+    "R15": {
+      "verdict": "NO",
+      "evidence": "“আরো ২০০০ যাবে হেলমেট বদলাতে।”"
+    },
+    "R16": {
+      "verdict": "YES",
+      "evidence": "মোবাইল রিচার্জ — ৭০০ টাকা।"
+    },
+    "R17": {
+      "verdict": "YES",
+      "evidence": "বাড়ি ভাড়া — ১৫,০০০ টাকা।"
+    },
+    "R18": {
+      "verdict": "YES",
+      "evidence": "বাড়ি সার্ভিস চার্জ — ৩,০০০ টাকা।"
+    },
+    "L01": {
+      "verdict": "YES",
+      "evidence": "৫০,০০০ + ৭,০০০ + ১২,০০০ = **৬৯,০০০ টাকা**।"
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "YES",
+      "evidence": "পাশের নোটের অতিরিক্ত খরচ: ৫,০০০ + ২,০০০ = **৭,০০০ টাকা**।"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "৫,০০০ + ২,০০০ = **৭,০০০ টাকা**।"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

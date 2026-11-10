@@ -1,0 +1,5 @@
+models: [fake/model-a, fake/model-b]
+judge_model: fake/judge
+trials: 5
+temperature: 0
+tasks: [C1_shop_ledger, R1_installment_collection, C2_tour_accounts, C3_wedding_accounts, R2_monthly_budget, R3_house_repair]

@@ -1,0 +1,30 @@
+English translation for judges. [~~text~~ = crossed-out text]
+
+Cash in drawer = 2320/-
+Had tea = 230/-
+
+Sales-
+Jashim = 500/- (cash)
+Abdullah = 500/- (cash), ~~200 due, total 700~~ paid the 200 due in the afternoon.
+Kabir = 800 (cash). Arrow -> got 300 taka of spoiled goods. Must refund the money tonight.
+Jalil = 17000/- (cash). Arrow -> will buy 300 taka more goods tomorrow.
+Rubayet - 2700 cash, 5300 due (will pay next month).
+Kakon - 300 (cash)
+Osman - 1300 taka (cash) + 200 taka due (~~tomorrow~~) will pay day after tomorrow.
+Jamil - 1500 taka (cash) Arrow -> he will get 200 taka. I will get an earlier 300 taka. He will pay the remaining 100 taka tonight.
+
+Receivable-
+Omar - 700 taka (~~will pay tonight~~)
+Kaiyum - 300 taka (will be late to pay)
+Ahmad - 1500 taka (will pay tomorrow)
+
+[Right side of the page, separated by a long line]
+Chaiti will come tonight to take 3000/-.
+[Below it, separated by a long line]
+Swarna will give 500/- tomorrow.
+
+Payable-
+Obayed - 800/- (will come tonight to take it)
+Shyama - 1200/- (will come to take it next ~~week~~ tomorrow)
+
+Question: "Can you check how much cash will be in the drawer when I close the shop tonight?"

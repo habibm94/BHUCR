@@ -1,0 +1,67 @@
+{
+  "run_id": "google_gemma-4-31b-it__R1_installment_collection__t3",
+  "model": "google/gemma-4-31b-it",
+  "task": "R1_installment_collection",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "কিস্তির টাকা তুললাম সারাদিন। দেখোতো রাতে অফিসে কত টাকা জমা দিতে হবে?",
+  "response": "ENTRIES:\n- কিস্তি\n- ১/ অমিল — ২৫০০(নগদ)। আরও ৪০০ বাকি। বিলকুল দেব।\n- ২/ হোসেন ভাই — ২৬০০ টাকা (নগদ)\n- ৩/ তুহিন — ২০০০ টাকা (নগদ)। $\\rightarrow$ ২৮০০ টাকা লিখছি। ২০০ টাকা পারে। খুচরা দিলো না। আগামী পরশু মরে।\n- ৪/ কাদের — ৩০০০/- টাকা নগদ।\n- * অফিস থেকে পাওয়া হাতখরচ — ৫০০ টাকা।\n- ব্যয় হয়েছে — ২৫০ \"\n- হাতে আছে — ২২০ \"\n- ফেরত দেয়া লাগবে না।\n\nRULES:\n- তুহিন's entry: The original 2000 is crossed out/replaced by 2800. However, the note says \"২০০ টাকা পারে\" (200 is extra/remaining) and \"খুচরা দিলো না\" (didn't give change), implying the actual cash collected is 2800.\n- Office expenses: The \"হাতখরচ\" (pocket money) of 500 is separate from the \"কিস্তি\" (installments) collected. The note \"ফেরত দেয়া লাগবে না\" (no need to return) means the remaining balance of the pocket money does not need to be deposited.\n\nREASONING:\n1. Collect all installment (কিস্তি) amounts:\n   - অমিল: 2500\n   - হোসেন ভাই: 2600\n   - তুহিন: 2800 (as per the updated note \"২৮০০ টাকা লিখছি\")\n   - কাদের: 3000\n2. Sum of installments: $2500 + 2600 + 2800 + 3000 = 10900$.\n3. The office pocket money (৫০০ টাকা) and its expenses are explicitly marked as \"ফেরত দেয়া লাগবে না\" (no need to return), so they are not added to the deposit amount.\n\nFINAL: 10900",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "10900",
+    "value": 10900
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "৪/ কাদের — ৩০০০/- টাকা নগদ।"
+    },
+    "R07": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "কাদের: 3000"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

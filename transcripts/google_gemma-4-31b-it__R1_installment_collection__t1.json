@@ -1,0 +1,67 @@
+{
+  "run_id": "google_gemma-4-31b-it__R1_installment_collection__t1",
+  "model": "google/gemma-4-31b-it",
+  "task": "R1_installment_collection",
+  "trial": 1,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "কিস্তির টাকা তুললাম সারাদিন। দেখোতো রাতে অফিসে কত টাকা জমা দিতে হবে?",
+  "response": "ENTRIES:\n- কিস্তি\n- ২/ অমিলা — ২৪০০(নগদ)। আরো ৫০০ পাবো। বিলকুল দেব।\n- ৩/ হোসেন ভাই — ২৬০০ টাকা (নগদ)\n- ৪/ তুহিন — ২০০০টাকা (নগদ)। $\\rightarrow$ ২৮০০ টাকা লিখছি। ২০০ টাকা পারে। খুচরা ছিল না। আগামী পরশু নেব।\n- ৫/ কাদের — ৩০০০/- টাকা নগদ।\n- * অফিস থেকে পাওয়া হাতখরচ — ৫০০ টাকা।\n- ব্যয় হয়েছে — ২৫০ ॥\n- হাতে আছে — ২২০ ॥\n- ফেরত দেয়া লাগবে না।\n\nRULES:\n- অমিলা: ২৪০০ collected. (The \"500 more\" is a future receivable, not currently collected).\n- হোসেন ভাই: ২৬০০ collected.\n- তুহিন: The entry was changed from ২০০০ to ২৮০০. However, the note says \"২০০ টাকা পারে\" (200 is extra/pending) and \"খুচরা ছিল না\" (didn't have change), meaning only ২৬০০ was actually collected (২৮০০ - ২০০).\n- কাদের: ৩০০০ collected.\n- Office allowance: ৫০০ received, but the note \"ফেরত দেয়া লাগবে না\" (no need to return) means this money and its remaining balance (২২০) are not part of the installment collection to be deposited.\n\nREASONING:\n1. Amila: 2400\n2. Hossain Bhai: 2600\n3. Tuhin: The written amount is 2800, but since 200 was not collected due to lack of change, the actual amount is 2800 - 200 = 2600.\n4. Kader: 3000\nTotal = 2400 + 2600 + 2600 + 3000 = 10600.\n\nFINAL: 10600",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "10600",
+    "value": 10600
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "কাদের — ৩০০০/- টাকা নগদ।"
+    },
+    "R07": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "Kader: 3000 ... Total = 2400 + 2600 + 2600 + 3000 = 10600."
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

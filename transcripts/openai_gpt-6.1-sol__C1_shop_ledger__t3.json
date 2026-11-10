@@ -1,0 +1,99 @@
+{
+  "run_id": "openai_gpt-6.1-sol__C1_shop_ledger__t3",
+  "model": "openai/gpt-6.1-sol",
+  "task": "C1_shop_ledger",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "দেখোতো আজ রাতে দোকান বন্ধ করার সময় ক্যাশে কত টাকা থাকবে?",
+  "response": "ENTRIES:\n- শিরোনাম: “দোকানের হিসাব”।\n- উপরে: “ক্যাশ ছিল → ২৩২০/-”; “চা খাইছি → ২০০/-”।\n- “বিক্রি”:\n  - জসিম: ৫০০ টাকা নগদ।\n  - আব্দুল্লাহ: ৫০০ টাকা নগদ। “২০০ বাকি” কাটা; পাশে লেখা, “বাকির ২০০ দিয়ে গেছে বিকেলে”।\n  - কবির: ৮০০ টাকা নগদ। তীর দিয়ে লেখা, “৩০০ টাকার মাল পচা পাইছে। রাতে টাকা ফেরত দেয়া লাগবে”।\n  - জলিল: ১৭০০ টাকা নগদ। তীর দিয়ে লেখা, “আরো ৩০০/- মাল কিনবে কাল”।\n  - রুবায়েত: ২৭০০ টাকা নগদ, ৫৫০০ টাকা বাকি—আগামী মাসে দেবে।\n  - কাকন: ৩০০ টাকা নগদ।\n  - ওসমান: ১৩০০ টাকা নগদ ও ২০০ টাকা বাকি। “আগামীকাল” কেটে “পরশু দেবে” লেখা।\n  - জামাল: ১৫০০ টাকা নগদ। তীর দিয়ে লেখা, সে ২০০ টাকা পাবে; তার কাছে আগের ৩০০ টাকা পাওনা আছে। বাকি ১০০ টাকা রাতে দিয়ে যাবে।\n- “পাওনা”:\n  - ওমর → ৭০০ টাকা; “রাতে দেবে” কথাটি কাটা।\n  - কাইয়ুম → ৩০০ টাকা; “দেরী আছে দিতে”।\n  - আহমদ → ১৫০০ টাকা; “কাল দেবে”।\n- “দেনা”:\n  - ওবায়েদ: ৮০০ টাকা; রাতে আসবে নিতে।\n  - শ্যামল: ১২০০ টাকা; “আগামী সপ্তাহ” থেকে “সপ্তাহ” কেটে “কাল আসবে নিতে” করা হয়েছে।\n- ডান পাশের নোট:\n  - শেঠ রাতে ৩০০০ টাকা নিতে আসবে।\n  - খুশি ৫০০ টাকা দেবে আগামীকাল।\n\nRULES:\n- শুরুর ক্যাশ ২৩২০ টাকা যোগ হবে।\n- চায়ের ২০০ টাকা খরচ বাদ যাবে।\n- নগদ বিক্রির সব টাকা যোগ হবে।\n- আব্দুল্লাহর বিকেলে পরিশোধ করা ২০০ টাকাও যোগ হবে।\n- কবিরকে রাতে ফেরত দেওয়ার ৩০০ টাকা বাদ যাবে।\n- জামালের হিসাব সমন্বয়ের পর রাতে দেওয়ার ১০০ টাকা যোগ হবে।\n- ওবায়েদের ৮০০ টাকা এবং শেঠের ৩০০০ টাকা আজ রাতেই দিতে হবে, তাই বাদ যাবে।\n- ওমরের “রাতে দেবে” কাটা থাকায় তার ৭০০ টাকা আজকের ক্যাশে ধরা হবে না।\n- ভবিষ্যতের বিক্রি, বাকি আদায় ও দেনা পরিশোধ আজকের হিসাবে ধরা হবে না।\n\nREASONING:\n১. নগদ বিক্রি:\n৫০০ + ৫০০ + ৮০০ + ১৭০০ + ২৭০০ + ৩০০ + ১৩০০ + ১৫০০ = ৯৩০০ টাকা।\n\n২. অতিরিক্ত আদায়:\n২০০ + ১০০ = ৩০০ টাকা।\n\n৩. আজকের মোট বহির্গমন:\n২০০ + ৩০০ + ৮০০ + ৩০০০ = ৪৩০০ টাকা।\n\n৪. দোকান বন্ধের সময় ক্যাশ:\n২৩২০ + ৯৩০০ + ৩০০ − ৪৩০০ = ৭৬২০ টাকা।\n\nFINAL: ৭৬২০",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "৭৬২০",
+    "value": 7620
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "ক্যাশ ছিল → ২৩২০/-"
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "জসিম: ৫০০ টাকা নগদ।"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "আব্দুল্লাহ: ৫০০ টাকা নগদ।"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "“বাকির ২০০ দিয়ে গেছে বিকেলে”"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "কবির: ৮০০ টাকা নগদ।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "৩০০ টাকার মাল পচা পাইছে। রাতে টাকা ফেরত দেয়া লাগবে"
+    },
+    "R08": {
+      "verdict": "NO",
+      "evidence": "জলিল: ১৭০০ টাকা নগদ।"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "রুবায়েত: ২৭০০ টাকা নগদ"
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "কাকন: ৩০০ টাকা নগদ।"
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "ওসমান: ১৩০০ টাকা নগদ"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "জামাল: ১৫০০ টাকা নগদ।"
+    },
+    "R13": {
+      "verdict": "YES",
+      "evidence": "বাকি ১০০ টাকা রাতে দিয়ে যাবে।"
+    },
+    "R14": {
+      "verdict": "NO",
+      "evidence": "শেঠ রাতে ৩০০০ টাকা নিতে আসবে।"
+    },
+    "R15": {
+      "verdict": "YES",
+      "evidence": "ওবায়েদ: ৮০০ টাকা; রাতে আসবে নিতে।"
+    },
+    "L01": {
+      "verdict": "YES",
+      "evidence": "শুরুর ক্যাশ ২৩২০ টাকা যোগ হবে।"
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": "৫০০ + ৫০০ + ৮০০ + ১৭০০ + ২৭০০ + ৩০০ + ১৩০০ + ১৫০০ = ৯৩০০ টাকা।"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "২০০ + ১০০ = ৩০০ টাকা।"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": "২০০ + ৩০০ + ৮০০ + ৩০০০ = ৪৩০০ টাকা।"
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

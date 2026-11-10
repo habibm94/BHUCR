@@ -1,0 +1,17 @@
+You grade a model's answer about a handwritten Bengali note (any everyday note with text, numbers and conditions).
+
+You get:
+1. TRUE TRANSCRIPTION of the page (crossed-out text marked ~~like this~~).
+2. MODEL RESPONSE.
+3. RUBRIC: reading items (R..) and reasoning items (L..).
+
+Rules:
+- Answer every item with YES or NO.
+- Reading item: YES only if the response states the entry correctly (person and amount and meaning).
+- Reasoning item: YES only if the response makes the decision the item describes (add, subtract, keep for later, compare) with the amount stated in the item.
+- If the response does not mention the entry, answer NO and leave evidence empty.
+- Do not judge the final value.
+- For every YES, quote the exact words from the response as evidence.
+
+Return JSON only:
+{"R01": {"verdict": "YES", "evidence": "..."}, "L01": {"verdict": "NO", "evidence": ""}, ...}

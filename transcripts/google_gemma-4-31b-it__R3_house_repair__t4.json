@@ -1,0 +1,87 @@
+{
+  "run_id": "google_gemma-4-31b-it__R3_house_repair__t4",
+  "model": "google/gemma-4-31b-it",
+  "task": "R3_house_repair",
+  "trial": 4,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "বাসায় মেরামতের কাজ করি। মিস্ত্রী বলল আরো ৮০০০ টাকা লাগবে রং কিনতে। দেখোতো রং কেনার টাকা আছে কীনা ক্যাশে",
+  "response": "ENTRIES:\n- বাসা মেরামত\n- ১. শুরুর ব্যালেন্স — ৫৬০০০/- টাকা\n- ২. ধার যোগ — ৫০০০/- টাকা\n- খরচ:\n- ১. ইট — ২০০০০/- টাকা\n- ২. বালু — ৩০০০/- টাকা\n- ৩. সিমেন্ট — ২৭১০০/- টাকা\n- ৪. পরিবহন — ২৭০০/- টাকা\n- ৫. রড — ৬০০০/- টাকা + পরে আরো ২২০০ টাকা।\n- ৬. রথ — ২৩৭০/- টাকা\n- ৭. বাস পরিবহন — ৫০০/- টাকা\n- ৮. রং — ২২০০/- টাকা\n- ৯. মিস্ত্রী খরচ — ৭০০০/- টাকা\n- ১০. মিস্ত্রির দুপুরের খাবার — ২৫০ টাকা।\n\nRULES:\n- Starting balance: 56,000\n- Added loan: 5,000\n- Expenses to be subtracted: 20,000, 3,000, 27,100, 2,700, 6,000, 2,200, 2,370, 500, 2,200, 7,000, 250.\n- Target amount needed: 8,000.\n\nREASONING:\n1. Total Cash In = 56,000 + 5,000 = 61,000.\n2. Total Expenses = 20,000 (Bricks) + 3,000 (Sand) + 27,100 (Cement) + 2,700 (Transport) + 6,000 (Rod) + 2,200 (Additional Rod) + 2,370 (Rath) + 500 (Bus) + 2,200 (Paint) + 7,000 (Mistri) + 250 (Food) = 73,320.\n3. Current Balance = 61,000 - 73,320 = -12,320.\n4. Since the balance is negative, there is no cash available to spend another 8,000.\n\nFINAL: না",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "না",
+    "value": "no"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "২. ধার যোগ — ৫০০০/- টাকা"
+    },
+    "R03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "২. বালু — ৩০০০/- টাকা"
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R07": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "৬. রথ — ২৩৭০/- টাকা"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "৭. বাস পরিবহন — ৫০০/- টাকা"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "৯. মিস্ত্রী খরচ — ৭০০০/- টাকা"
+    },
+    "R12": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "6,000 (Rod) + 2,200 (Additional Rod)"
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

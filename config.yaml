@@ -1,0 +1,16 @@
+# Models under test (OpenRouter model IDs)
+models:
+  # frontier
+  - google/gemini-4-argon
+  - openai/gpt-6.1-sol
+  # - anthropic/claude-opus-5.5   # excluded: every reply blocked by the provider content filter
+  # small / open-weight
+  - qwen/qwen3.8-flash
+  - google/gemma-4-31b-it
+  # - meta-llama/llama-4-maverick   # dropped for budget
+# Judge must differ from every tested model
+judge_model: anthropic/claude-sonnet-5.5
+trials: 4
+temperature: 0
+# Tasks to run (folder names under tasks/)
+tasks: [C1_shop_ledger, R1_installment_collection, C2_tour_accounts, C3_wedding_accounts, R2_monthly_budget, R3_house_repair]

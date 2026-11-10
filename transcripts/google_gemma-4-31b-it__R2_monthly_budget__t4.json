@@ -1,0 +1,111 @@
+{
+  "run_id": "google_gemma-4-31b-it__R2_monthly_budget__t4",
+  "model": "google/gemma-4-31b-it",
+  "task": "R2_monthly_budget",
+  "trial": 4,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "মাসের প্রায় শেষদিক। একটা ২২০০০ টাকা দামের ইয়ারবাড পছন্দ হয়েছে। দেখোতো কেনার মত টাকা আছে কীনা।",
+  "response": "ENTRIES:\n- শিরোনাম: মাসিক খরচ\n- খরচ (Expenses):\n    - ২. গ্রোসারি — ৪০০০/-\n    - ২. বিদ্যুৎ — ২৫০০/-\n    - ৩. গ্যাস — ২২০০/-\n    - ৪. ওয়াজির লোন — ৩০০০/-\n    - ৫. ইয়ারবাড — ২০০০/-\n    - ৬. ব্যক্তিগত miscellaneous — ১০০০০/- (সাথে নোট: আরও ৫০০০/- পাঠাতে হবে এই মাসে)\n    - ৭. জিম ফি — ৩০০০/-\n    - ৮. সাবস্ক্রিপশন রিনিউয়াল — ২০০০/-\n    - ৯. বাইক ফুয়েল — ২৭৫০/-\n    - ২০. বাইক সার্ভিস — ২৩০০/- (সাথে নোট: আরও ২০০০ টাকা লাগবে হেডলাইট বদলাতে)\n    - ২১. মোবাইল রিচার্জ — ৯০০/-\n    - ২২. বাড়ি রেন্ট — ১৪০০০/-\n    - ২৩. বাড়ি সার্ভিস চার্জ — ৩০০০/-\n- আয় (Income):\n    - বেতন — ৫০০০০/- টাকা\n    - দোকানের ভাড়া — ৭০০০/- টাকা\n    - বাবার পাঠানো টাকা — ২২০০০/- টাকা\n\nRULES:\n- মোট আয় = বেতন + দোকানের ভাড়া + বাবার পাঠানো টাকা।\n- মোট খরচ = তালিকার সব খরচ + ব্যক্তিগত miscellaneous এর অতিরিক্ত ৫০০০/- + বাইক সার্ভিসের হেডলাইটের জন্য অতিরিক্ত ২০০০/-।\n- ইয়ারবাড কেনার জন্য প্রয়োজনীয় টাকা = ২২০০০ টাকা।\n- শর্ত: বর্তমান সঞ্চয় (আয় - খরচ) যদি ২২০০০ বা তার বেশি হয়, তবে উত্তর 'হ্যাঁ', অন্যথায় 'না'।\n\nREASONING:\n১. মোট আয় গণনা: ৫০,০০০ + ৭,০০০ + ২২,০০০ = ৭৯,০০০ টাকা।\n২. তালিকাভুক্ত খরচ গণনা: ৪০০০ + ২৫০০ + ২২০০ + ৩০০০ + ২০০০ + ১০০০০ + ৩০০০ + ২০০০ + ২৭৫০ + ২৩০০ + ৯০০ + ১৪০০০ + ৩০০০ = ৪৬,০৫০ টাকা।\n৩. অতিরিক্ত খরচ যোগ: ৪৬,০৫০ + ৫০০০ (miscellaneous) + ২০০০ (হেডলাইট) = ৫৩,০৫০ টাকা।\n৪. বর্তমান ব্যালেন্স: ৭৯,০০০ - ৫৩,০৫০ = ২৫,৪৫০ টাকা।\n৫. ইয়ারবাডের দাম ২২,০০০ টাকা। যেহেতু ২৫,৪৫০ > ২২,০০০, তাই টাকা আছে।\n\nFINAL: হ্যাঁ",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "হ্যাঁ",
+    "value": "yes"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "বেতন — ৫০০০০/- টাকা"
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "দোকানের ভাড়া — ৭০০০/- টাকা"
+    },
+    "R03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "৪. ওয়াজির লোন — ৩০০০/-"
+    },
+    "R08": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R09": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "সাথে নোট: আরও ৫০০০/- পাঠাতে হবে এই মাসে"
+    },
+    "R11": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R12": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R13": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R14": {
+      "verdict": "YES",
+      "evidence": "বাইক সার্ভিস — ২৩০০/- (সাথে নোট: আরও ২০০০ টাকা লাগবে হেডলাইট বদলাতে)"
+    },
+    "R15": {
+      "verdict": "YES",
+      "evidence": "আরও ২০০০ টাকা লাগবে হেডলাইট বদলাতে"
+    },
+    "R16": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R17": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R18": {
+      "verdict": "YES",
+      "evidence": "বাড়ি সার্ভিস চার্জ — ৩০০০/-"
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "YES",
+      "evidence": "৪৬,০৫০ + ৫০০০ (miscellaneous) + ২০০০ (হেডলাইট) = ৫৩,০৫০ টাকা"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "৪৬,০৫০ + ৫০০০ (miscellaneous) + ২০০০ (হেডলাইট) = ৫৩,০৫০ টাকা"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

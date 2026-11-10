@@ -1,0 +1,21 @@
+[~~text~~ = crossed-out text]
+
+Trip accounts
+* Total money —
+* Ashish — 2300/-
+* Jahed — 3300/-
+* Keya — 3000/- (first 2000/- in cash, later 1000/- by cheque)
+* Me — 1000/-
+* Rubel — 400/- (paid on the morning of the trip)
+
+Expenses
+* Bus fare — 3400/-
+* Toll — 300/-
+* Hotel — 5000/-
+* Insurance — 500/- (50% will be refunded)
+* Local bike — 300/- (will get 200 more)
+* Food — 500/-
+
+[Right side, separated by a line] Next week we will all sit together and plan the next trip.
+* Rubel said he would give 500/- more, did not give.
+* If money is left, everyone gets it back in proportion to what they paid.

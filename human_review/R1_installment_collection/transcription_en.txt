@@ -1,0 +1,9 @@
+[~~text~~ = crossed-out text]
+
+Installments
+1/ Jamila — 1500 (cash). I will get 500 more. She will pay in the afternoon.
+2/ Hossain bhai — 2300 taka (cash)
+3/ Dulal — 2000 taka (cash). Arrow> installment is 1800 taka. He will get 200 taka back. There was no change. He will take it the day after tomorrow.
+4/ Kader — 3000 taka (cash)
+
+* Pocket money from the office — 300 taka. Spent — 180. In hand — 120. (does not need to be returned)

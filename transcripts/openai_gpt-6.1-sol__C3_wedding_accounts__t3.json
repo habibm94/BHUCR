@@ -1,0 +1,127 @@
+{
+  "run_id": "openai_gpt-6.1-sol__C3_wedding_accounts__t3",
+  "model": "openai/gpt-6.1-sol",
+  "task": "C3_wedding_accounts",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "ছেলের বিয়ের অনুষ্ঠান করলাম। দেখোতো কত টাকা বাচল?",
+  "response": "ENTRIES:\n- শিরোনাম: “রুমনের বিয়ে”।\n- হাতে ছিল: ২০০০০০ টাকা।\n- “ব্যয়”:\n  ১. ডেকোরেশন: ৩০০০০ টাকা।\n  ২. অতিথি খাওয়া: ২০০০০ টাকা।\n  ৩. কনে বাড়িতে উপহার: ২০০০০ টাকা। পাশে তীরচিহ্ন দিয়ে লেখা: “ভ্যানওয়ালা ৫০০ টাকা পাবে”।\n  ৪. সাউন্ড: ৫০০০ টাকা।\n  ৫. পান-সুপারি: ২০০০ টাকা।\n  ৬. শেরওয়ানী: ৫০০০ টাকা।\n  ৭. গেট বানানো: ৩০০০ টাকা।\n  ৮. চা মিষ্টি: ২৫০০ টাকা।\n  ৯. গয়না: ৩০০০০ টাকা।\n  ১০. গাড়ি ভাড়া: ১৩০০০ টাকা।\n  ১১. ক্যাটারিং সার্ভিস চার্জ: ১২৬০০ টাকা। পাশে তীরচিহ্ন দিয়ে লেখা: “আরো ২০০০ টাকা পাবে”।\n- “সাহায্য করেছে”:\n  ১. রুবিনা: ৫০০০ টাকা।\n  ২. কালাম: ২০০০০ টাকা। পাশে তীরচিহ্ন দিয়ে লেখা: “৭০০০ টাকা ফেরত দেয়া লাগবে”।\n  ৩. আলম: ২০০০০ টাকা। পাশে তীরচিহ্ন দিয়ে লেখা: “আরো ২০০০ টাকা দেবে বলেছিল”।\n  ৪. জুনায়েদ: ২০০০০ টাকা।\n- কোনো কাটাকাটি বা তারিখ দেখা যাচ্ছে না।\n\nRULES:\n- হাতে থাকা টাকার সঙ্গে পাওয়া সাহায্য যোগ হবে।\n- ভ্যানওয়ালার বাকি ৫০০ টাকা ও ক্যাটারিংয়ের বাকি ২০০০ টাকা খরচে যোগ হবে।\n- কালামকে ফেরত দেওয়ার ৭০০০ টাকা বাদ যাবে।\n- আলমের অতিরিক্ত ২০০০ টাকা দেওয়ার প্রতিশ্রুতি আছে, কিন্তু পাওয়ার উল্লেখ নেই—তাই তা যোগ হবে না।\n- সব বকেয়া ও ফেরতযোগ্য টাকা মেটানোর পরের অবশিষ্ট হিসাব করা হচ্ছে।\n\nREASONING:\n১. পাওয়া সাহায্য = ৫০০০ + ২০০০০ + ২০০০০ + ২০০০০ = ৬৫০০০ টাকা।\n\n২. মোট হাতে পাওয়া টাকা = ২০০০০০ + ৬৫০০০ = ২৬৫০০০ টাকা।\n\n৩. তালিকাভুক্ত খরচ = ৩০০০০ + ২০০০০ + ২০০০০ + ৫০০০ + ২০০০ + ৫০০০ + ৩০০০ + ২৫০০ + ৩০০০০ + ১৩০০০ + ১২৬০০ = ১৪৩১০০ টাকা।\n\n৪. বকেয়াসহ মোট খরচ = ১৪৩১০০ + ৫০০ + ২০০০ = ১৪৫৬০০ টাকা।\n\n৫. অবশিষ্ট = ২৬৫০০০ − ১৪৫৬০০ − ৭০০০ = ১১২৪০০ টাকা।\n\nFINAL: ১১২৪০০",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "১১২৪০০",
+    "value": 112400
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "ডেকোরেশন: ৩০০০০ টাকা।"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "অতিথি খাওয়া: ২০০০০ টাকা।"
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "“ভ্যানওয়ালা ৫০০ টাকা পাবে”"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "সাউন্ড: ৫০০০ টাকা।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "পান-সুপারি: ২০০০ টাকা।"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "শেরওয়ানী: ৫০০০ টাকা।"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "গেট বানানো: ৩০০০ টাকা।"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "গয়না: ৩০০০০ টাকা।"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "গাড়ি ভাড়া: ১৩০০০ টাকা।"
+    },
+    "R13": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R14": {
+      "verdict": "YES",
+      "evidence": "“আরো ২০০০ টাকা পাবে”"
+    },
+    "R15": {
+      "verdict": "YES",
+      "evidence": "রুবিনা: ৫০০০ টাকা।"
+    },
+    "R16": {
+      "verdict": "YES",
+      "evidence": "কালাম: ২০০০০ টাকা।"
+    },
+    "R17": {
+      "verdict": "YES",
+      "evidence": "“৭০০০ টাকা ফেরত দেয়া লাগবে”"
+    },
+    "R18": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R19": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R20": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "YES",
+      "evidence": "ভ্যানওয়ালার বাকি ৫০০ টাকা ও ক্যাটারিংয়ের বাকি ২০০০ টাকা খরচে যোগ হবে।"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "ভ্যানওয়ালার বাকি ৫০০ টাকা ও ক্যাটারিংয়ের বাকি ২০০০ টাকা খরচে যোগ হবে।"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L06": {
+      "verdict": "YES",
+      "evidence": "কালামকে ফেরত দেওয়ার ৭০০০ টাকা বাদ যাবে।"
+    },
+    "L07": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

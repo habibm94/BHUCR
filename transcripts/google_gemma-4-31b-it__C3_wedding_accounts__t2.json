@@ -1,0 +1,127 @@
+{
+  "run_id": "google_gemma-4-31b-it__C3_wedding_accounts__t2",
+  "model": "google/gemma-4-31b-it",
+  "task": "C3_wedding_accounts",
+  "trial": 2,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "ছেলের বিয়ের অনুষ্ঠান করলাম। দেখোতো কত টাকা বাচল?",
+  "response": "ENTRIES:\n- রুমনের বিয়ে\n- হাতে ছিল — ২০০০০০/- টাকা\n- ব্যয়:\n- ১. ডেকোরেশন — ৫০০০০/- টাকা\n- ২. অতিথি ভোজন — ২০০০০/- টাকা\n- ৩. বানিজ্য উন্নত হার — ২০০০০/- টাকা $\\rightarrow$ ফেরত পাব ২০০০ টাকা\n- ৪. মিষ্টি — ৫০০০/- টাকা\n- ৫. পান-সুপারি — ২০০০/- টাকা\n- ৬. শেরওয়ানি — ৫০০০/- টাকা\n- ৭. গেট বানানো — ৩০০০/- টাকা\n- ৮. চা মিষ্টি — ২৫০০/- টাকা\n- ৯. গয়না — ৩০০০০/- টাকা\n- ১০. গাড়ি ভাড় — ২৬০০০/- টাকা\n- ১১. ক্যাটারিং সার্ভিস চার্জ — ৯৬০০ টাকা $\\rightarrow$ আরও ২০০০ টাকা পাব\n- সাহায্যকারী খরচ:\n- ১. রুবিনা — ৫০০০ টাকা\n- ২. বকুলাস — ২০০০০ টাকা $\\rightarrow$ ৭০০০ টাকা ফেরত দেওয়া লাগবে\n- ৩. আনাম — ২০০০০ টাকা $\\rightarrow$ আরও ২০০০ টাকা দেবে আগামীকাল\n- ৪. ইনায়েত — ২০০০০ টাকা\n\nRULES:\n- Total Budget: ২০০০০০ টাকা।\n- Refund from item 3: ২০০০ টাকা (increases savings).\n- Refund from item 11: ২০০০ টাকা (increases savings).\n- Payment to Bakulas: ৭০০০ টাকা (decreases savings).\n- Payment from Anam: ২০০০ টাকা (increases savings).\n\nREASONING:\n1. Total Initial Amount = ২০০০০০\n2. Total Expenses:\n   - ডেকোরেশন: ৫০০০০\n   - অতিথি ভোজন: ২০০০০\n   - বানিজ্য উন্নত হার: ২০০০০\n   - মিষ্টি: ৫০০০\n   - পান-সুপারি: ২০০০\n   - শেরওয়ানি: ৫০০০\n   - গেট বানানো: ৩০০০\n   - চা মিষ্টি: ২৫০০\n   - গয়না: ৩০০০০\n   - গাড়ি ভাড়: ২৬০০০\n   - ক্যাটারিং সার্ভিস: ৯৬০০\n   - রুবিনা: ৫০০০\n   - বকুলাস: ২০০০০\n   - আনাম: ২০০০০\n   - ইনায়েত: ২০০০০\n   - Total Expenses = ৫০০০০ + ২০০০০ + ২০০০০ + ৫০০০ + ২০০০ + ৫০০০ + ৩০০০ + ২৫০০ + ৩০০০০ + ২৬০০০ + ৯৬০০ + ৫০০০ + ২০০০০ + ২০০০০ + ২০০০০ = ২১০১০০ টাকা।\n3. Adjustments:\n   - Refund from item 3: +২০০০\n   - Refund from item 11: +২০০০\n   - Payment to Bakulas: -৭০০০\n   - Payment from Anam: +২০০০\n   - Net Adjustment = ২০০০ + ২০০০ - ৭০০০ + ২০০০ = -১০০০ টাকা।\n4. Total Final Expenditure = ২১০১০০ - ১০০০ = ২১০১০০ (Wait, the adjustment is a net loss of 1000, so total cost is ২১০১০০ + ১০০০ = ২১১১০০).\n   Let's re-calculate:\n   Expenses: ৫০০০০+ ২০০০০+ ২০০০০+ ৫০০০+ ২০০০+ ৫০০০+ ৩০০০+ ২৫০০+ ৩০০০০+ ২৬০০০+ ৯৬০০+ ৫০০০+ ২০০০০+ ২০০০০+ ২০০০০ = ২১০১০০।\n   Additional cost (Bakulas): ৭০০০।\n   Additional gains (Item 3, Item 11, Anam): ২০০০ + ২০০০ + ২০০০ = ৬০০০।\n   Net cost = ২১০১০০ + ৭০০০ - ৬০০০ = ২১১১০০।\n5. Savings = ২০০০০০ - ২১১১০০ = -১১১০০।\n\nFINAL: -১১১০০",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "-১১১০০",
+    "value": -11100
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "৫. পান-সুপারি — ২০০০/- টাকা"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "৬. শেরওয়ানি — ৫০০০/- টাকা"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "৭. গেট বানানো — ৩০০০/- টাকা"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "৯. গয়না — ৩০০০০/- টাকা"
+    },
+    "R12": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R13": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R14": {
+      "verdict": "YES",
+      "evidence": "১১. ক্যাটারিং সার্ভিস চার্জ — ৯৬০০ টাকা $\\rightarrow$ আরও ২০০০ টাকা পাব"
+    },
+    "R15": {
+      "verdict": "YES",
+      "evidence": "১. রুবিনা — ৫০০০ টাকা"
+    },
+    "R16": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R17": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R18": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R19": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R20": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L06": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L07": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

@@ -1,0 +1,9 @@
+{
+  "id": "R1_installment_collection",
+  "type": "regular",
+  "answer_type": "number",
+  "answer": 9100,
+  "complexity": {
+    "rules": 3
+  }
+}

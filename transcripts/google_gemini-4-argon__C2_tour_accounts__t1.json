@@ -1,0 +1,87 @@
+{
+  "run_id": "google_gemini-4-argon__C2_tour_accounts__t1",
+  "model": "google/gemini-4-argon",
+  "task": "C2_tour_accounts",
+  "trial": 1,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "ট্যুর থেকে ফিরলাম। আমি ছিলাম হিসাবের দায়িত্বে। দেখোতো হিসাব থেকে কোন টাকা বেচেছে কীনা?",
+  "response": "ENTRIES:\n- শিরোনাম: ট্যুর হিসাব\n- মোট টাকা:\n  * আশিষ — ২৩০০/-\n  * জাহেদ — ৩৩০০/-\n  * কেয়া — ৩০০০/- (প্রথমে ক্যাশ ২০০০/-, পরে চেক ১০০০/-)\n  * আমি — ১০০০/-\n  * রুবেল — ৪০০/- (ট্যুরের দিন সকালে দিয়েছে)\n- খরচ:\n  * বাস ভাড়া — ৩৪০০/-\n  * টোল — ৩০০/-\n  * হোটেল ভাড়া — ৫০০০/-\n  * ইন্স্যুরেন্স — ৫০০/- (৫০% ফেরত পাবো)\n  * লোকাল বাইক — ৩০০/- (আরো ২০০ টাকা পাবে)\n  * খাবার — ৫০০/-\n- পাশের নোট: আগামী সপ্তাহে সবাই মিলে বসে পরবর্তী ট্যুরের প্লান করব।\n- নিচের নোটসমূহ:\n  * রুবেল আরো ৫০০/- দেবে বলেছিলো, দেয়নি।\n  * টাকা বাচলে সবাই যে যতটুকু দিয়েছে সেই অনুপাতে টাকা ফেরত পাবে।\n\nRULES:\n- কেয়ার মোট জমা ৩০০০ টাকা (ক্যাশ ২০০০ + চেক ১০০০)।\n- রুবেল ৪০০ টাকা দিয়েছে; আরো ৫০০ টাকা দেওয়ার কথা থাকলেও দেয়নি, তাই তা মোট জমার সাথে যুক্ত হবে না।\n- ইন্স্যুরেন্সের ৫০০ টাকার মধ্যে ৫০% (২৫০ টাকা) ভবিষ্যতে ফেরত পাওয়া যাবে (\"ফেরত পাবো\"), যা এখনো পাওয়া যায়নি।\n- লোকাল বাইকের জন্য ৩০০ টাকা দেওয়া হয়েছে এবং তিনি আরো ২০০ টাকা পাবেন (\"পাবে\"), যা এখনো দেওয়া হয়নি।\n- টাকা বাঁচলে প্রদত্ত অনুপাতে ফেরত দেওয়ার শর্ত রয়েছে।\n\nREASONING:\n১. মোট জমা টাকার পরিমাণ:\nআশিষ (২৩০০) + জাহেদ (৩৩০০) + কেয়া (৩০০০) + আমি (১০০০) + রুবেল (৪০০) = ১০,০০০ টাকা।\n\n২. এ পর্যন্ত মোট নগদ খরচের পরিমাণ:\nবাস ভাড়া (৩৪০০) + টোল (৩০০) + হোটেল ভাড়া (৫০০০) + ইন্স্যুরেন্স (৫০০) + লোকাল বাইক (৩০০) + খাবার (৫০০) = ১০,০০০ টাকা।\n\n৩. বর্তমান হিসাব অনুযায়ী:\nমোট জমা (১০,০০০ টাকা) - মোট খরচ (১০,০০০ টাকা) = ০ টাকা।\n(এছাড়া ইন্স্যুরেন্সের ২৫০ টাকা এখনো ফেরত পাওয়া যায়নি এবং লোকাল বাইকের বকেয়া ২০০ টাকাও এখনো পরিশোধ করা হয়নি; বর্তমান নগদ হিসাবে কোনো টাকা অবশিষ্ট নেই।)\n\nঅতএব, হিসাব থেকে কোনো টাকা বাঁচেনি।\n\nFINAL: না",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "না",
+    "value": "no"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "আশিষ — ২৩০০/-"
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "জাহেদ — ৩৩০০/-"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "কেয়ার মোট জমা ৩০০০ টাকা (ক্যাশ ২০০০ + চেক ১০০০)"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "আমি — ১০০০/-"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "রুবেল — ৪০০/- (ট্যুরের দিন সকালে দিয়েছে)"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "রুবেল আরো ৫০০/- দেবে বলেছিলো, দেয়নি।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "বাস ভাড়া — ৩৪০০/-"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "টোল — ৩০০/-"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "হোটেল ভাড়া — ৫০০০/-"
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "ইন্স্যুরেন্স — ৫০০/- (৫০% ফেরত পাবো)"
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "লোকাল বাইক — ৩০০/- (আরো ২০০ টাকা পাবে)"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "খাবার — ৫০০/-"
+    },
+    "L01": {
+      "verdict": "YES",
+      "evidence": "আশিষ (২৩০০) + জাহেদ (৩৩০০) + কেয়া (৩০০০) + আমি (১০০০) + রুবেল (৪০০) = ১০,০০০ টাকা।"
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "আরো ৫০০ টাকা দেওয়ার কথা থাকলেও দেয়নি, তাই তা মোট জমার সাথে যুক্ত হবে না।"
+    },
+    "L03": {
+      "verdict": "YES",
+      "evidence": "মোট জমা (১০,০০০ টাকা) - মোট খরচ (১০,০০০ টাকা) = ০ টাকা।"
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reasoning",
+  "score": 30
+}

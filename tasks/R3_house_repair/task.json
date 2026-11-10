@@ -1,0 +1,9 @@
+{
+  "id": "R3_house_repair",
+  "type": "regular",
+  "answer_type": "yesno",
+  "answer": "yes",
+  "complexity": {
+    "rules": 2
+  }
+}

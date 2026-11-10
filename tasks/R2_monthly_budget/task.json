@@ -1,0 +1,9 @@
+{
+  "id": "R2_monthly_budget",
+  "type": "regular",
+  "answer_type": "yesno",
+  "answer": "no",
+  "complexity": {
+    "rules": 2
+  }
+}

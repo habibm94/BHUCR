@@ -1,0 +1,87 @@
+{
+  "run_id": "google_gemini-4-argon__R3_house_repair__t4",
+  "model": "google/gemini-4-argon",
+  "task": "R3_house_repair",
+  "trial": 4,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "বাসায় মেরামতের কাজ করি। মিস্ত্রী বলল আরো ৮০০০ টাকা লাগবে রং কিনতে। দেখোতো রং কেনার টাকা আছে কীনা ক্যাশে",
+  "response": "ENTRIES:\nবাসা মেরামত\n১. শুরুর ক্যাশ ———— ৫৩৫০০/- টাকা\n২. পরে যোগ ———— ৫০০০/- টাকা\n\nখরচ\n১. ইট ———— ১০০০০/- টাকা\n২. বালু ———— ৩০০০/- টাকা\n৩. সিমেন্ট ———— ১৩৭০০/- টাকা\n৪. পরিবহন ———— ১৭০০/- টাকা\n৫. রড ———— ৮০০০/- টাকা + পরে আরো ২২০০ টাকা।\n৬. কাঠ ———— ২৩৭০/- টাকা\n৭. বাশ পরিবহন ———— ৫০০/- টাকা\n৮. বাশ ———— ১২০০/- টাকা\n৯. মিস্ত্রি খরচ ———— ৭০০০/- টাকা\n১০. মিস্ত্রির দুপুরের খাবার — ১২০০ টাকা।\n\nRULES:\n- মোট ক্যাশ বা জমা টাকা বের করতে শুরুর ক্যাশ এবং পরে যোগ করা টাকা যোগ করতে হবে।\n- মোট খরচ বের করতে তালিকার সব খরচের খাত (রডের অতিরিক্ত ২২০০ টাকাসহ) যোগ করতে হবে।\n- অবশিষ্ট ক্যাশ ৮০০০ টাকার সমান বা বেশি হলে উত্তর 'হ্যাঁ' হবে, কম হলে 'না' হবে।\n\nREASONING:\nমোট ক্যাশ:\nশুরুর ক্যাশ = ৫৩৫০০ টাকা\nপরে যোগ = ৫০০০ টাকা\nমোট ক্যাশ = ৫৩৫০০ + ৫০০০ = ৫৮৫০০ টাকা।\n\nমোট খরচ:\n১. ইট = ১০০০০ টাকা\n২. বালু = ৩০০০ টাকা\n৩. সিমেন্ট = ১৩৭০০ টাকা\n৪. পরিবহন = ১৭০০ টাকা\n৫. রড = ৮০০০ + ২২০০ = ১০২০০ টাকা\n৬. কাঠ = ২৩৭০ টাকা\n৭. বাশ পরিবহন = ৫০০ টাকা\n৮. বাশ = ১২০০ টাকা\n৯. মিস্ত্রি খরচ = ৭০০০ টাকা\n১০. মিস্ত্রির দুপুরের খাবার = ১২০০ টাকা\n\nমোট খরচ = ১০০০০ + ৩০০০ + ১৩৭০০ + ১৭০০ + ১০২০০ + ২৩৭০ + ৫০০ + ১২০০ + ৭০০০ + ১২০০ = ৫০৮৭০ টাকা।\n\nঅবশিষ্ট ক্যাশ = মোট ক্যাশ - মোট খরচ\n= ৫৮৫০০ - ৫০৮৭০ = ৭৬৩০ টাকা।\n\nরং কিনতে লাগবে ৮০০০ টাকা, কিন্তু ক্যাশে আছে ৭৬৩০ টাকা (যা ৮০০০ টাকার চেয়ে কম)। তাই রং কেনার মতো পর্যাপ্ত টাকা ক্যাশে নেই।\n\nFINAL: না",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "না",
+    "value": "no"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "২. পরে যোগ ———— ৫০০০/- টাকা"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "১. ইট ———— ১০০০০/- টাকা"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "২. বালু ———— ৩০০০/- টাকা"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "৩. সিমেন্ট ———— ১৩৭০০/- টাকা"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "৪. পরিবহন ———— ১৭০০/- টাকা"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "৫. রড ———— ৮০০০/- টাকা + পরে আরো ২২০০ টাকা।"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "৬. কাঠ ———— ২৩৭০/- টাকা"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "৭. বাশ পরিবহন ———— ৫০০/- টাকা"
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "৮. বাশ ———— ১২০০/- টাকা"
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "৯. মিস্ত্রি খরচ ———— ৭০০০/- টাকা"
+    },
+    "R12": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "৫. রড = ৮০০০ + ২২০০ = ১০২০০ টাকা"
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

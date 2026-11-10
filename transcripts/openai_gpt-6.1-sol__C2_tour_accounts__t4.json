@@ -1,0 +1,87 @@
+{
+  "run_id": "openai_gpt-6.1-sol__C2_tour_accounts__t4",
+  "model": "openai/gpt-6.1-sol",
+  "task": "C2_tour_accounts",
+  "trial": 4,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "ট্যুর থেকে ফিরলাম। আমি ছিলাম হিসাবের দায়িত্বে। দেখোতো হিসাব থেকে কোন টাকা বেচেছে কীনা?",
+  "response": "ENTRIES:\n- শিরোনাম: “ট্যুর হিসাব”।\n- “মোট টাকা”:\n  - আশিস — ২৬০০ টাকা।\n  - জাহিদ — ৩০০০ টাকা।\n  - কেয়া — ৩০০০ টাকা; পাশে: “প্রথমে ক্যাশ ২০০০/-, পরে চেকে ১০০০/-”।\n  - আমি — ২০০০ টাকা।\n  - রুবেল — ৪০০ টাকা; পাশে: “ট্যুরের দিন সকালে দিয়েছে”।\n- “খরচ”:\n  - বাস ভাড়া — ৩৪০০ টাকা।\n  - টোল — ৩০০ টাকা।\n  - হোটেল ভাড়া — ৫০০০ টাকা।\n  - ইন্স্যুরেন্স — ৫০০ টাকা; পাশে: “৫০% ফেরত পাবে”।\n  - লোকাল বাইক — ৩০০ টাকা; পাশে: “আরো ২০০ টাকা পাবে”।\n  - খাবার — ৫০০ টাকা।\n- নিচের নোট:\n  - “রুবেল আরো ৫০০/- দেবে বলেছিল, দেয়নি।”\n  - “টাকা বাঁচলে সবাই যে যতটুকু দিয়েছে সেই অনুপাতে টাকা ফেরত পাবে।”\n- ডান পাশের নোট: “আগামী সপ্তাহে সবাই মিলে বসে পরবর্তী ট্যুরের প্ল্যান করব।”\n- কোনো কাটাকাটি বা তীরচিহ্ন নেই; শিরোনামে দাগ এবং পাশের নোট আলাদা করার রেখা আছে।\n\nRULES:\n- কেয়ার নগদ ও চেক মিলিয়ে মোট ৩০০০ টাকা; আলাদা করে আবার যোগ করা যাবে না।\n- রুবেলের দেওয়া ৪০০ টাকা জমায় ধরতে হবে; প্রতিশ্রুত কিন্তু না-দেওয়া ৫০০ টাকা ধরা যাবে না।\n- ইন্স্যুরেন্সের ৫০%, অর্থাৎ ২৫০ টাকা ফেরত পাওয়ার কথা; হাতে পাওয়ার আগে বর্তমান জমায় ধরা যাবে না।\n- লোকাল বাইকের জন্য আরও ২০০ টাকা পরিশোধ বাকি।\n- চূড়ান্ত উদ্বৃত্ত প্রত্যেকের দেওয়া টাকার অনুপাতে ফেরত দিতে হবে।\n- আগামী সপ্তাহের পরিকল্পনার নোট বর্তমান হিসাব বদলায় না।\n\nREASONING:\n১. মোট পাওয়া টাকা:\n২৬০০ + ৩০০০ + ৩০০০ + ২০০০ + ৪০০ = ১১,০০০ টাকা।\n\n২. তালিকাভুক্ত খরচ:\n৩৪০০ + ৩০০ + ৫০০০ + ৫০০ + ৩০০ + ৫০০ = ১০,০০০ টাকা।\n\n৩. এখন হিসাবে অবশিষ্ট:\n১১,০০০ − ১০,০০০ = ১০০০ টাকা।\n\n৪. বাইকের বাকি মেটালে থাকবে:\n১০০০ − ২০০ = ৮০০ টাকা।\n\n৫. ইন্স্যুরেন্সের ফেরতও পাওয়া গেলে চূড়ান্ত উদ্বৃত্ত:\n৮০০ + ২৫০ = ১০৫০ টাকা।\n\nঅতএব টাকা বেঁচেছে—এখন হিসাবে ১০০০ টাকা, আর বকেয়া ও ফেরত নিষ্পত্তির পরে ১০৫০ টাকা।\n\nFINAL: হ্যাঁ",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "হ্যাঁ",
+    "value": "yes"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": "আশিস — ২৬০০ টাকা।"
+    },
+    "R02": {
+      "verdict": "NO",
+      "evidence": "জাহিদ — ৩০০০ টাকা।"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "কেয়া — ৩০০০ টাকা; পাশে: “প্রথমে ক্যাশ ২০০০/-, পরে চেকে ১০০০/-”।"
+    },
+    "R04": {
+      "verdict": "NO",
+      "evidence": "আমি — ২০০০ টাকা।"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "রুবেল — ৪০০ টাকা; পাশে: “ট্যুরের দিন সকালে দিয়েছে”।"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "“রুবেল আরো ৫০০/- দেবে বলেছিল, দেয়নি।”"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "বাস ভাড়া — ৩৪০০ টাকা।"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "টোল — ৩০০ টাকা।"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "হোটেল ভাড়া — ৫০০০ টাকা।"
+    },
+    "R10": {
+      "verdict": "YES",
+      "evidence": "ইন্স্যুরেন্স — ৫০০ টাকা; পাশে: “৫০% ফেরত পাবে”।"
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "লোকাল বাইক — ৩০০ টাকা; পাশে: “আরো ২০০ টাকা পাবে”।"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "খাবার — ৫০০ টাকা।"
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": "২৬০০ + ৩০০০ + ৩০০০ + ২০০০ + ৪০০ = ১১,০০০ টাকা।"
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "রুবেলের দেওয়া ৪০০ টাকা জমায় ধরতে হবে; প্রতিশ্রুত কিন্তু না-দেওয়া ৫০০ টাকা ধরা যাবে না।"
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": "১১,০০০ − ১০,০০০ = ১০০০ টাকা।"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "বাইকের বাকি মেটালে থাকবে: ১০০০ − ২০০ = ৮০০ টাকা।"
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": "৮০০ + ২৫০ = ১০৫০ টাকা।"
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

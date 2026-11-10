@@ -1,0 +1,67 @@
+{
+  "run_id": "openai_gpt-6.1-sol__R1_installment_collection__t3",
+  "model": "openai/gpt-6.1-sol",
+  "task": "R1_installment_collection",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "কিস্তির টাকা তুললাম সারাদিন। দেখোতো রাতে অফিসে কত টাকা জমা দিতে হবে?",
+  "response": "ENTRIES:\n- শিরোনাম: “কিস্তি”।\n- ১। জামিলা — ১৫০০ টাকা নগদ। আরও ৫০০ টাকা পাওয়া যাবে; বিকেলে দেবে।\n- ২। হোসেন ভাই — ২৫০০ টাকা নগদ।\n- ৩। দুলাল — ২০০০ টাকা নগদ। তীরচিহ্ন দিয়ে পাশে লেখা: “১৮০০ টাকা কিস্তি। ২০০ টাকা পাবে। খুচরা ছিল না। আগামী পরশু নেবে।”\n- ৪। কাদের — ৩০০০ টাকা নগদ।\n- নিচে আলাদা হিসাবে: “অফিস থেকে পাওয়া হাতখরচ — ৩০০ টাকা”; “ব্যয় হয়েছে — ১৮০”; “হাতে আছে — ১২০”।\n- হাতখরচের পাশে লেখা: “ফেরত দেওয়া লাগবে না।”\n- কোনো লেখা কাটা নেই।\n\nRULES:\n- জামিলার বাকি ৫০০ টাকা পাওয়ার উল্লেখ নেই, তাই জমার হিসাবে যোগ হবে না।\n- দুলালের দেওয়া ২০০০ টাকার মধ্যে ২০০ টাকা তাঁকে ফেরত দিতে হবে; অফিসের কিস্তির টাকা ১৮০০।\n- হাতখরচের অবশিষ্ট ১২০ টাকা ফেরত দিতে হবে না, তাই অফিসে জমার সঙ্গে যোগ হবে না।\n\nREASONING:\n১. মোট নগদ সংগ্রহ = ১৫০০ + ২৫০০ + ২০০০ + ৩০০০ = ৯০০০ টাকা।\n২. দুলালকে ফেরত দেওয়ার জন্য রাখতে হবে ২০০ টাকা।\n৩. অফিসে জমা = ৯০০০ − ২০০ = ৮৮০০ টাকা।\n\nFINAL: ৮৮০০",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "৮৮০০",
+    "value": 8800
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "১। জামিলা — ১৫০০ টাকা নগদ।"
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "আরও ৫০০ টাকা পাওয়া যাবে; বিকেলে দেবে।"
+    },
+    "R03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "৩। দুলাল — ২০০০ টাকা নগদ।"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "২০০ টাকা পাবে। খুচরা ছিল না। আগামী পরশু নেবে।"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "৪। কাদের — ৩০০০ টাকা নগদ।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "হাতখরচের পাশে লেখা: “ফেরত দেওয়া লাগবে না।”"
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "মোট নগদ সংগ্রহ = ১৫০০ + ২৫০০ + ২০০০ + ৩০০০ = ৯০০০ টাকা।"
+    },
+    "L05": {
+      "verdict": "YES",
+      "evidence": "হাতখরচের অবশিষ্ট ১২০ টাকা ফেরত দিতে হবে না, তাই অফিসে জমার সঙ্গে যোগ হবে না।"
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

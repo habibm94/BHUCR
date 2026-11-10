@@ -1,0 +1,87 @@
+{
+  "run_id": "openai_gpt-6.1-sol__R3_house_repair__t3",
+  "model": "openai/gpt-6.1-sol",
+  "task": "R3_house_repair",
+  "trial": 3,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "বাসায় মেরামতের কাজ করি। মিস্ত্রী বলল আরো ৮০০০ টাকা লাগবে রং কিনতে। দেখোতো রং কেনার টাকা আছে কীনা ক্যাশে",
+  "response": "ENTRIES:\n- শিরোনাম: “বাসা মেরামত”।\n- শুরুর ক্যাশ — ৬০৫০০ টাকা।\n- পরে দেন — ৫০০০ টাকা।\n- উপশিরোনাম: “খরচ”।\n১. ইট — ১০০০০ টাকা।\n২. বালু — ৩০০০ টাকা।\n৩. সিমেন্ট — ১৬৭০০ টাকা।\n৪. পরিবহন — ১৭০০ টাকা।\n৫. রড — ৮০০০ টাকা; পাশে যোগ করা আছে: “পরে আরো ২২০০ টাকা”।\n৬. কাঠ — ২৩৭০ টাকা।\n৭. বাঁশ পরিবহন — ৫০০ টাকা।\n৮. বাঁশ — ২০০ টাকা।\n৯. মিস্ত্রি খরচ — ৭০০০ টাকা।\n১০. মিস্ত্রির দুপুরের খাবার — ২২০০ টাকা।\n- কোনো কাটাকাটি, তীরচিহ্ন বা তারিখ নেই।\n\nRULES:\n- শুরুর ক্যাশের সঙ্গে পরে দেওয়া ৫০০০ টাকা যোগ হবে।\n- রডের জন্য পরে দেওয়া ২২০০ টাকাও খরচের হিসাবে ধরতে হবে।\n- সব খরচ বাদ দেওয়ার পর অন্তত ৮০০০ টাকা থাকলে রং কেনা যাবে।\n\nREASONING:\n- মোট জমা = ৬০৫০০ + ৫০০০ = ৬৫৫০০ টাকা।\n- মোট খরচ = ১০০০০ + ৩০০০ + ১৬৭০০ + ১৭০০ + ৮০০০ + ২২০০ + ২৩৭০ + ৫০০ + ২০০ + ৭০০০ + ২২০০ = ৫৩৮৭০ টাকা।\n- ক্যাশে অবশিষ্ট = ৬৫৫০০ − ৫৩৮৭০ = ১১৬৩০ টাকা।\n- রং কিনতে ৮০০০ টাকা দিলে বাকি থাকবে ৩৬৩০ টাকা। তাই ক্যাশে যথেষ্ট টাকা আছে।\n\nFINAL: হ্যাঁ",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "হ্যাঁ",
+    "value": "yes"
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "পরে দেন — ৫০০০ টাকা।"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "ইট — ১০০০০ টাকা।"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "বালু — ৩০০০ টাকা।"
+    },
+    "R05": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "পরিবহন — ১৭০০ টাকা।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "রড — ৮০০০ টাকা; পাশে যোগ করা আছে: “পরে আরো ২২০০ টাকা”।"
+    },
+    "R08": {
+      "verdict": "YES",
+      "evidence": "কাঠ — ২৩৭০ টাকা।"
+    },
+    "R09": {
+      "verdict": "YES",
+      "evidence": "বাঁশ পরিবহন — ৫০০ টাকা।"
+    },
+    "R10": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "R11": {
+      "verdict": "YES",
+      "evidence": "মিস্ত্রি খরচ — ৭০০০ টাকা।"
+    },
+    "R12": {
+      "verdict": "YES",
+      "evidence": "মিস্ত্রির দুপুরের খাবার — ২২০০ টাকা।"
+    },
+    "L01": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "১০০০০ + ৩০০০ + ১৬৭০০ + ১৭০০ + ৮০০০ + ২২০০ + ২৩৭০ + ৫০০ + ২০০ + ৭০০০ + ২২০০"
+    },
+    "L03": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L04": {
+      "verdict": "NO",
+      "evidence": ""
+    },
+    "L05": {
+      "verdict": "NO",
+      "evidence": ""
+    }
+  },
+  "label": "Fail: Reading and understanding",
+  "score": 10
+}

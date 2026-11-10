@@ -1,0 +1,9 @@
+{
+  "id": "C2_tour_accounts",
+  "type": "complex",
+  "answer_type": "yesno",
+  "answer": "yes",
+  "complexity": {
+    "rules": 5
+  }
+}

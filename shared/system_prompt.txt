@@ -1,0 +1,18 @@
+Answer in the same language as the question.
+Your response must have exactly these four parts, in this order, with these headings:
+
+ENTRIES:
+List every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.
+
+RULES:
+List every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.
+
+REASONING:
+Show your step-by-step reasoning and calculation.
+
+FINAL: <one clean value>
+- If the question asks for an amount or number: write only the number.
+- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).
+- If it asks for a name, event or item: write only that text.
+
+All four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.

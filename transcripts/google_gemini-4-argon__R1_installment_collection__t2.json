@@ -1,0 +1,67 @@
+{
+  "run_id": "google_gemini-4-argon__R1_installment_collection__t2",
+  "model": "google/gemini-4-argon",
+  "task": "R1_installment_collection",
+  "trial": 2,
+  "system": "Answer in the same language as the question.\nYour response must have exactly these four parts, in this order, with these headings:\n\nENTRIES:\nList every entry and every piece of writing on the page, including crossed-out text, arrows and side notes.\n\nRULES:\nList every condition and rule you found (dates, deadlines, quantities, payments, crossed-out changes, updates) and how it affects the answer.\n\nREASONING:\nShow your step-by-step reasoning and calculation.\n\nFINAL: <one clean value>\n- If the question asks for an amount or number: write only the number.\n- If it asks for a judgement (should I go, should I buy, am I free that day): write only yes or no (হ্যাঁ / না).\n- If it asks for a name, event or item: write only that text.\n\nAll four parts are mandatory. Do not ask questions back. Do not add anything after the FINAL line.\n",
+  "prompt": "কিস্তির টাকা তুললাম সারাদিন। দেখোতো রাতে অফিসে কত টাকা জমা দিতে হবে?",
+  "response": "ENTRIES:\n- কিস্তি\n- ১/ জমিলা — ১৫০০ (নগদ), আরো ৫০০ পাবো। বিকালে দেবে।\n- ২/ হোসেন ভাই — ২৩০০ টাকা (নগদ)\n- ৩/ দুলাল — ২০০০ টাকা (নগদ) ⟶ ১৮০০ টাকা কিস্তি। ২০০ টাকা পাবে। খুচরো ছিলো না। আগামী পরশু নেবে।\n- ৪/ কাদের — ৩০০০/- টাকা নগদ।\n- * অফিস থেকে পাওয়া হাতখরচ — ৩০০ টাকা।\n  ব্যয় হয়েছে — ১৮০ \"\n  হাতে আছে — ১২০ \"\n  (পাশে নোট: ফেরত দেয়া লাগবে না।)\n\nRULES:\n- জমিলা: ১৫০০ টাকা নগদ দিয়েছে। বিকেলে আরও ৫০০ টাকা দেওয়ার কথা ছিল। যেহেতু সারাদিনের হিসাব শেষে রাতে অফিসে জমা দেওয়ার কথা বলা হচ্ছে, তাই বিকেলের ৫০০ টাকাও পাওয়া গেছে (মোট ১৫০০ + ৫০০ = ২০০০ টাকা)।\n- হোসেন ভাই: ২৩০০ টাকা নগদ দিয়েছে।\n- দুলাল: ২০০০ টাকা নগদ দিয়েছে, কিন্তু তার কিস্তি হলো ১৮০০ টাকা। বাকি ২০০ টাকা সে আগামী পরশু ফেরত নেবে, তাই অফিসে কিস্তি বাবদ ১৮০০ টাকাই জমা দিতে হবে।\n- কাদের: ৩০০০ টাকা নগদ দিয়েছে।\n- হাতখরচ: অফিস থেকে পাওয়া হাতখরচের অবশিষ্ট ১২০ টাকা \"ফেরত দেয়া লাগবে না\" বলে স্পষ্ট উল্লেখ আছে, তাই এটি জমা দিতে হবে না।\n\nREASONING:\n১. জমিলার মোট কিস্তির টাকা = ১৫০০ + ৫০০ = ২০০০ টাকা।\n২. হোসেন ভাইয়ের কিস্তির টাকা = ২৩০০ টাকা।\n৩. দুলালের কিস্তির টাকা = ১৮০০ টাকা (বাকি ২০০ টাকা তার পাওনা, কিস্তির অংশ নয়)।\n৪. কাদেরের কিস্তির টাকা = ৩০০০ টাকা।\n৫. হাতখরচের বাকি টাকা ফেরত দিতে হবে না = ০ টাকা।\n\nঅতএব, রাতে অফিসে মোট জমা দিতে হবে = ২০০০ + ২৩০০ + ১৮০০ + ৩০০০ = ৯১০০ টাকা।\n\nFINAL: ৯১০০",
+  "format": {
+    "ok": true,
+    "reason": "",
+    "final_raw": "৯১০০",
+    "value": 9100
+  },
+  "verdicts": {
+    "R01": {
+      "verdict": "YES",
+      "evidence": "জমিলা: ১৫০০ টাকা নগদ দিয়েছে।"
+    },
+    "R02": {
+      "verdict": "YES",
+      "evidence": "বিকেলে আরও ৫০০ টাকা দেওয়ার কথা ছিল।"
+    },
+    "R03": {
+      "verdict": "YES",
+      "evidence": "হোসেন ভাই: ২৩০০ টাকা নগদ দিয়েছে।"
+    },
+    "R04": {
+      "verdict": "YES",
+      "evidence": "দুলাল: ২০০০ টাকা নগদ দিয়েছে, কিন্তু তার কিস্তি হলো ১৮০০ টাকা।"
+    },
+    "R05": {
+      "verdict": "YES",
+      "evidence": "বাকি ২০০ টাকা সে আগামী পরশু ফেরত নেবে"
+    },
+    "R06": {
+      "verdict": "YES",
+      "evidence": "কাদের: ৩০০০ টাকা নগদ দিয়েছে।"
+    },
+    "R07": {
+      "verdict": "YES",
+      "evidence": "অবশিষ্ট ১২০ টাকা \"ফেরত দেয়া লাগবে না\" বলে স্পষ্ট উল্লেখ আছে, তাই এটি জমা দিতে হবে না।"
+    },
+    "L01": {
+      "verdict": "YES",
+      "evidence": "জমিলার মোট কিস্তির টাকা = ১৫০০ + ৫০০ = ২০০০ টাকা।"
+    },
+    "L02": {
+      "verdict": "YES",
+      "evidence": "২০০০ + ২৩০০ + ১৮০০ + ৩০০০ = ৯১০০ টাকা"
+    },
+    "L03": {
+      "verdict": "YES",
+      "evidence": "দুলালের কিস্তির টাকা = ১৮০০ টাকা (বাকি ২০০ টাকা তার পাওনা, কিস্তির অংশ নয়)।"
+    },
+    "L04": {
+      "verdict": "YES",
+      "evidence": "কাদেরের কিস্তির টাকা = ৩০০০ টাকা।"
+    },
+    "L05": {
+      "verdict": "YES",
+      "evidence": "হাতখরচের বাকি টাকা ফেরত দিতে হবে না = ০ টাকা।"
+    }
+  },
+  "label": "Clean pass",
+  "score": 100
+}
